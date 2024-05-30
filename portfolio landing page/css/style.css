@@ -1,0 +1,436 @@
+/* *********************************
+    Common css
+*********************************** */
+
+*{
+    padding:0;
+    margin:0; 
+    /* border:1px solid red;   */
+}
+body{
+    background:#e9e9e9;
+    scroll-behavior: smooth;
+}
+html{
+    font-size:62.5%;
+    font-family:pop-400;
+}
+p{
+    font-size:1.6rem;
+}
+.content{
+    width:85%; 
+    margin:auto;   
+}
+/* FONTS  */
+@font-face {
+    font-family: pop-200;
+    src: url(../font/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: pop-400;
+    src: url(../font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: pop-600;
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+
+
+
+
+
+
+
+/* *********************************
+    Nav baar css
+*********************************** */
+
+.navBar{
+    display:flex;
+    justify-content:space-between;
+    margin-top:3.5rem;
+}
+
+.logo{
+    width:50%;
+    cursor:pointer;
+}
+.navMenu ul{
+    display:flex;
+    justify-content:space-between;
+    padding-top:1.7rem;
+}
+
+.navMenu ul li{
+    margin:0px 1.5rem;
+    list-style-type:none;
+}
+
+.navMenu ul li a{
+    text-decoration:none;
+    color:#545454;
+    font-size:1.6rem;
+    font-family:pop-400;
+    transition:.5s;
+}
+.navMenu ul li a:hover{
+    color:#f13f3f;
+ 
+}
+
+/* *********************************
+    Hero text and call to action
+*********************************** */
+.hero{
+    text-align:center;
+    margin-top:15rem;
+}
+.hero h1{
+    line-height:5.5rem;
+    font-family:pop-200;
+    font-size:4.8rem;
+    color:#1a1a1a;
+}
+.hero p{
+    max-width:75%;
+    margin:auto;
+}
+.hero-bold{
+    font-family:pop-600;
+    font-size:4.2rem;    
+}
+.hero-btn{
+    z-index: 100; 
+    margin-top:7rem;
+       
+}
+.hero-btn a:nth-child(1){
+    
+    max-width:20rem;
+    padding:1rem 2rem;
+    text-decoration:none;
+    background-color:#f13f3f;
+    color:#fff;
+    font-size:1.6rem;
+    border-radius:2.8rem;
+    transition:.4s;
+}
+.hero-btn a:nth-child(1):hover{
+    padding:1rem 3rem;
+}
+.hero-btn a:nth-child(2):hover{
+    padding:0.7rem 6rem;
+}
+.hero-btn a:nth-child(2){
+    box-sizing:border-box;
+    border:0.3rem solid #f13f3f;
+    max-width:rem;
+    padding:0.7rem 2rem;
+    text-decoration:none;
+    background:#e9e9e9;
+    color:#f13f3f;
+    font-size:1.6rem;
+    border-radius:2.8rem;
+    transition:.4s;
+}
+
+/* ************************************
+About section
+************************************************** */
+.about{
+    box-sizing:border-box;
+    min-height:100vh;
+    background:#1a1a1a;
+    padding:10rem;
+    margin-top:-1rem;
+    z-index:-10;
+}
+.about{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    color:#e9e9e9;
+}
+.about .left{
+    flex-basis:58%;
+}
+.achivment{
+    display:flex;
+}
+.achivment h2:nth-child(2){
+    margin-left: 3rem;
+}
+.achivment h2{
+    font-family:pop-200;
+    font-size:2.2rem;
+    letter-spacing: 0.5rem;
+}
+.big-text{
+    font-family:pop-600;
+    font-size:3.4rem;
+}
+#hr{
+    max-width: 60%;
+}
+.who-we-are h1{
+    font-family:pop-600;
+    font-size:2.2rem;
+}
+.who-we-are p{
+    font-family:pop-200;
+    font-size:1.6rem;
+    max-width: 80%;
+}
+
+.about-btn{
+    margin-top: 5rem;
+}
+.about-btn a{
+    max-width:20rem;
+    padding:1.6rem 3.5rem;
+    text-decoration:none;
+    background-color:#f13f3f;
+    color:#fff;
+    font-size:1.6rem;
+    border-radius:2.8rem;
+    transition:.4s;
+}
+.about-btn a:hover{
+    padding:1.6rem 6rem;
+}
+
+.about .right .about-imgbx{
+    margin-top: 30px;
+}
+
+@media(max-width:375){
+    .about .right .about-imgbx{
+        display:none;
+    }
+}
+/* ****************************
+ servics area
+********************************************* */
+#services{
+    min-height:70vh;
+    padding:10rem;
+}
+#services h2{
+    font-family:pop-600;
+    text-align:center;
+    font-size:4.2rem;
+    color:#1a1a1a;
+}
+#services p{
+    font-size:1.6rem;
+    font-family:pop-200;
+    color:#545454;
+    text-align:center;
+}
+#hr2{
+    border:0.3rem solid #f13f3f;
+    width: 6rem;
+    margin: 0.4rem auto;
+    border-radius:28px;
+}
+.services-box{
+    margin-top:5rem;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.services-box div{
+    box-sizing:border-box;
+    width:34rem;
+    background:#e1e1e1;
+    font-family:pop-400;
+    font-size:2.2rem;
+    transition:.5s;
+    cursor:pointer;
+    padding:8rem;
+    text-align:center;
+}
+.imgBx{
+    width:6.2rem;
+    margin:auto;
+}
+.imgBx img{
+    width:100%;
+    object-fit: cover;
+}
+.services-box div:hover{
+    box-shadow:0px 5px 8px 6px rgba(0,0,0,0.07);
+    padding-top:5rem;
+    z-index:3;
+}
+.ser-btn{
+    text-align: center;
+}
+.ser-btn a{
+    max-width:20rem;
+    padding:1.6rem 3.5rem;
+    text-decoration:none;
+    background-color:#f13f3f;
+    color:#fff;
+    font-size:1.6rem;
+    border-radius:2.8rem;
+    transition:.4s;
+}
+.ser-btn a:hover{
+    letter-spacing: 0.4rem;
+}
+
+/* ***************************************
+get in touch
+******************************** */
+#get-in-touch{
+    margin-top: 12rem;
+    height:60rem;
+    background:#1a1a1a;
+    box-sizing:border-box;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow:hidden;
+}
+.get-in-touch-content{
+    display:flex;
+    justify-content:space-between;
+    
+}
+.get-in-touch-left{
+    flex-basis: 50%;
+}
+.get-in-touch-right{
+    flex-basis: 50%;
+}
+.get-in-touch-left img{
+    height:50rem;
+}
+.get-in-touch-right h3{
+    margin:2rem;
+    font-size:4.2rem;
+    font-family: pop-600;
+    color:#e1e1e1;
+}
+#hr3{
+    border:0.3rem solid #f13f3f;
+    width: 10rem;
+    border-radius:28px;
+    margin-left:2rem;
+    margin-top:-2rem;
+}
+
+/* form */
+#form{
+    margin:2rem;
+}
+#form input{
+    padding:1.4rem 3rem;
+    width:80%;
+    outline:none;
+    border-radius:2rem;
+    font-family:pop-400;
+    font-size:1.6rem;
+    border:none;
+    margin-top:0.6rem;
+}
+#form textarea{
+    margin-top:0.6rem;
+    resize: none;
+    padding:1.4rem 3rem;
+    width:80%;
+    outline:none;
+    border-radius:2rem;
+    font-family:pop-400;
+    font-size:1.6rem;
+    border:none;
+}
+#form input[type="submit"]{
+    max-width:20rem;
+    padding:1.6rem 3.5rem;
+    background-color:#f13f3f;
+    color:#fff;
+    font-size:1.6rem;
+    border-radius:2.8rem;
+    transition:.4s;
+    outline:none;
+    border:none;
+}
+#form input[type="submit"]:hover{
+    padding:1.6rem 5rem;
+}
+    
+/* ***************************************
+footer
+******************************** */
+#hr4{
+    margin:3rem auto;
+    width:60%;
+}
+#footer .hero-btn{
+    margin-top:1rem;
+    text-align:center;
+}
+#footer .hero-btn a{
+    padding:1.6rem 8rem;
+}
+#footer .hero-btn a:hover{
+    padding:1.6rem 10rem;
+}
+.footNavMenu ul{
+    display:flex;
+    justify-content:center;
+}
+
+.footNavMenu ul li{
+    margin:4rem 4rem;
+    list-style-type:none;
+}
+.footNavMenu ul li a{
+    text-decoration:none;
+    color:#545454;
+    font-size:1.6rem;
+    font-family:pop-400;
+    transition:.5s;
+}
+.footNavMenu ul li a:hover{
+    color:#f13f3f;
+ 
+}
+
+.social-md ul{
+    display:flex;
+    flex-basis:50%;
+    justify-content:center;
+    margin-top:-2rem;
+}
+
+.social-md ul li{
+    list-style-type: none;
+    margin:1rem 5rem;
+}
+.social-md ul li a{
+    text-decoration:none;
+    color:#1a1a1a;
+    font-size:3.2rem;
+    transition:.5s;
+}
+
+.social-md ul li a:hover{
+    color:#f13f3f;
+}
+.copyRight{
+    margin-top:4rem;
+    text-align:center
+    
+}
+.copyRight a{
+    color:#1a1a1a;
+    font-size:1.2rem;
+    font-family:pop-400;
+    text-decoration:none;
+}
+.copyRight a:hover{
+    color:#f13f3f;
+}
